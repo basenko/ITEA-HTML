@@ -1,0 +1,170 @@
+@color_orange: #f1ad1d;
+@fifty: 50px;
+@color_white: white;
+#button-addon2 {
+    background: @color_orange;
+    height: @fifty + 14px;
+    width: @fifty + 100px;
+    color: @color_white;
+}
+
+.form-control {
+    height: @fifty;
+}
+
+
+#form-massage{
+    width: 570px;
+    height: 200px;
+    border: 1px solid #c7c7c7;
+}
+
+.info-blocks a{
+    color: black;
+}
+.buttons{
+    background-color: @color_orange;
+    width: @fifty + 50px;
+    height: @fifty - 7px;
+    border: none;
+    color: @color_white;
+    font-weight: bold;
+}
+/*-----------------bird-------------*/
+/*текст на заднем фоне мне так больше нравится по размещению, чем на макете.*/
+.bird{
+  height: 475px;
+  background-image: url(../img/Layer\ 59@1X.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 250px;
+  margin-bottom: 150px;
+  /*width: 100%;
+    height: 380px;
+    background-image: url("../img/Layer\ 59@1X.png");
+    background-repeat: no-repeat;
+    margin-top: 120px;
+    margin-bottom:114px;*/
+  }
+  .bird-p1{
+    text-align: center;
+    padding-top: 151px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .bird-p{
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    width: 700px;
+    margin-top: -24px;
+  }
+  .bird-hr{
+      margin-top: 30px;
+  }
+  /*-----------------bird-------------*/
+
+  .icons{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 170px;
+  }
+
+  .portfolio {
+      display: grid;
+      width: 80%;
+      grid-template-columns: 1fr
+      1fr 1fr;
+      grid-template-rows: repeat(16, 20px);
+      grid-gap: 20px 80px;
+      margin: 0 auto;
+  }
+  .portfolio > .portfolio_block:first-child{
+    grid-row-start: 1;
+    grid-row-end: 10;
+  }
+
+.portfolio > .portfolio_block:nth-child(2){
+    grid-row-start: 1;
+    grid-row-end: 12;
+}
+
+.portfolio > .portfolio_block:nth-child(3){
+    grid-row-start: 1;
+    grid-row-end: 11;
+  }
+  .portfolio > .portfolio_block:nth-child(4){
+    grid-row-start: 10;
+    grid-row-end: 19;
+  }
+  .portfolio > .portfolio_block:nth-child(5){
+    grid-row-start: 12;
+    grid-row-end: 18;
+  }
+  .portfolio > .portfolio_block:nth-child(6){
+      grid-row-start: 11;
+      grid-row-end: 19;
+  }
+
+.portfolio_block > header {
+    font-size: 18pt;
+    color: rgba(51, 51, 51, 255);
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .portfolio_block > header::before {
+    content: '\00A0 \270E ';
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    background-color: #333333;
+    color: @color_orange;
+    margin: 5px 5px 0 0;
+  }
+
+  .portfolio_block p {
+      color: rgba(80, 80, 80, 0.9);
+      font-size: 0.87em;
+      margin-top: 10px;
+      border-bottom: 3px solid silver;
+      padding-bottom: 4px;
+  }
+  
+  .portfolio_block > footer {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+.portfolio_block > footer > a {
+    text-align: right;
+    vertical-align: middle;
+}
+.portfolio_block > .black_line {
+    height: 45px;
+    background-color: black;
+}
+.portfolio_block {
+    border-bottom: 3px solid black;
+}
+.footer_btn {
+    width: 231px;
+    height: 51px;
+    background-color: @color_orange;
+    color: white;
+    text-align: center;
+    line-height: 51px;
+    border: none;
+
+}
+.center_btn {
+    padding: 112px 0;
+    text-align: center;
+}
